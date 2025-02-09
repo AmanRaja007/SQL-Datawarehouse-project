@@ -17,6 +17,13 @@ Develop a modern data warehouse using PostgreSql to consolidate sales data, enab
 - **Scope**: Focus on the latest dataset only; historization of data is not required.
 - **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
+---
+##🏗️ Data Architecture
+--The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
+!(docs/data_architecture.png)
+1.**Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+2.**Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.3.
+3.**Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics
   ---
   ### BI: Analytics & Reporting (Data Analysis)
 Objective
